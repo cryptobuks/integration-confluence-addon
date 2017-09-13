@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="app ac-content"
+>
+  <a
+    href=""
+    onClick={[Function]}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img
+      alt=""
+      onLoad={[Function]}
+      src=""
+    />
+  </a>
+  <a
+    className="link"
+    href=""
+    onClick={[Function]}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <span
+      className="logo"
+    >
+      <img
+        alt="InVisionApp logo"
+        height="28"
+        src="InVision-icon.svg"
+        width="28"
+      />
+      <span
+        className="open-in-invision"
+      >
+        Open in InVision
+      </span>
+    </span>
+  </a>
+</div>
+`;

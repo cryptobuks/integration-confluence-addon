@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    %REACT_APP_CUSTOM_HEAD%
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>InVision for Confluence</title>
+    <link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/6.0.7/css/aui.min.css" media="all">
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
+  <body class="aui-page-hybrid" style="background:transparent">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root" class="ac-content"></div>
+
+    <script>
+      window.InVisionConfig = {
+        baseUrl: "%REACT_APP_BASE_URL%",
+        apiUrl: "%REACT_APP_API_URL%"
+      }
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//aui-cdn.atlassian.com/aui-adg/6.0.7/js/aui.min.js"></script>
+    <script src="https://invisionapp.atlassian.net/atlassian-connect/all.js"  data-options="sizeToParent:true;"></script>
+    %REACT_APP_CUSTOM_FOOTER%
+  </body>
+</html>
