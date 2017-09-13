@@ -1,6 +1,6 @@
 [![LICENSE](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
-[![Codeship](https://app.codeship.com/projects/82eddc00-7164-0135-25d4-0a9c8bd2473c/status?branch=master)](https://app.codeship.com/projects/243371)
-[![codecov](https://codecov.io/gh/InVisionApp/integration-confluence-addon/branch/master/graph/badge.svg?token=34XsLpEHOT)](https://codecov.io/gh/InVisionApp/integration-confluence-addon)
+[![Build Status](https://travis-ci.org/InVisionApp/integration-confluence-addon.svg)](https://travis-ci.org/InVisionApp/integration-confluence-addon)
+[![codecov](https://codecov.io/gh/InVisionApp/integration-confluence-addon/branch/master/graph/badge.svg)](https://codecov.io/gh/InVisionApp/integration-confluence-addon)
 
 <img align="right" width="350px" src="images/preview.png">
 
