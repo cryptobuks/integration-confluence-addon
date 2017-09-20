@@ -54,19 +54,19 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-		"precover": "npm run test -- --coverage",
-		"cover": "wget -qO - https://codecov.io/bash | sh /dev/stdin -t bd741313-e70c-4c64-ad18-c970d35fd353"
+    "precover": "npm run test -- --coverage",
+    "cover": "wget -qO - https://codecov.io/bash | sh /dev/stdin -t bd741313-e70c-4c64-ad18-c970d35fd353"
   },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
-		],
-		"coveragePathIgnorePatterns": [
-			"src/index.js"
-		],
+    ],
+    "coveragePathIgnorePatterns": [
+      "src/index.js"
+    ],
     "setupFiles": [
-			"<rootDir>/config/jest/jestSetup.js",
-			"<rootDir>/config/polyfills.js"
+      "<rootDir>/config/jest/jestSetup.js",
+      "<rootDir>/config/polyfills.js"
     ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
@@ -91,7 +91,9 @@
       "web.jsx",
       "jsx",
       "node"
-    ]
+    ],
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "babel": {
     "presets": [

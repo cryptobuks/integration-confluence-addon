@@ -2,42 +2,80 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="app ac-content"
+  className="app ac-content min"
 >
-  <a
-    href=""
-    onClick={[Function]}
-    rel="noopener noreferrer"
-    target="_blank"
+  <div
+    className="wrapper"
   >
-    <img
-      alt=""
-      onLoad={[Function]}
-      src=""
-    />
-  </a>
-  <a
-    className="link"
-    href=""
-    onClick={[Function]}
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    <span
-      className="logo"
+    <a
+      href=""
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      target="_blank"
     >
       <img
-        alt="InVisionApp logo"
-        height="28"
-        src="InVision-icon.svg"
-        width="28"
+        alt=""
+        className="thumb"
+        onLoad={[Function]}
+        src=""
       />
-      <span
-        className="open-in-invision"
+    </a>
+    <div
+      className="info"
+    >
+      <h4
+        className="info--project-name"
       >
-        Open in InVision
+        
+      </h4>
+      <span
+        className="info--project-type"
+      >
+        InVision Prototype
       </span>
-    </span>
-  </a>
+    </div>
+  </div>
+  <div
+    className="tools"
+  >
+    <a
+      className="resize min"
+      onClick={[Function]}
+    >
+      <span
+        className="size"
+      >
+        <img
+          alt="Resize"
+          height="20"
+          src="resize-full-screen.svg"
+          width="20"
+        />
+      </span>
+    </a>
+    <a
+      className="link"
+      href=""
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <span
+        className="logo"
+      >
+        <img
+          alt="InVisionApp logo"
+          height="28"
+          src="InVision-icon.svg"
+          width="28"
+        />
+        <span
+          className="open-in-invision"
+        >
+          Open in InVision
+        </span>
+      </span>
+    </a>
+  </div>
 </div>
 `;

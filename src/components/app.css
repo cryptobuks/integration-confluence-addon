@@ -1,4 +1,27 @@
 .app {
-  align-items: baseline;
+  display: flex;
+  font-family: "SF UI Text", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Ubuntu", "Droid Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+.app.max {
   width: 100%;
+}
+
+.app.min {
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.app > .wrapper {
+  display: flex;
+}
+
+.app > .tools {
+  align-self: flex-end;
+  display: flex;
+  height: 28px;
+  padding: 1em;
 }
