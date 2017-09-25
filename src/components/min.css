@@ -1,0 +1,13 @@
+.info {
+  align-self: center;
+  margin-left: 1em;
+}
+
+.info--project-name {
+  font-weight: normal;
+}
+
+.info--project-type {
+  color: #999999;
+  font-size: small;
+}

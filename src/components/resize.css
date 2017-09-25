@@ -1,0 +1,14 @@
+.size {
+  align-items: center;
+  background: #dee0e5;
+  border-radius: 2px;
+  display: inline-flex;
+  height: 28px;
+  justify-content: center;
+  width: 28px;
+}
+
+.resize:hover {
+  cursor: pointer;
+  text-decoration: none;
+}

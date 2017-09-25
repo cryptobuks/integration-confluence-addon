@@ -1,18 +1,22 @@
 import React, { Component } from 'react'
-import Thumb from './Thumb'
+import Max from './Max'
+import Min from './Min'
+import Resize from './Resize'
 import Link from './Link'
 import ErrorMessage from './ErrorMessage'
 import './app.css'
 
 class App extends Component {
-  constructor () {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       previewImgUrl: '',
       projectName: '',
       shareUrl: '',
+      size: 'min',
       err: ''
     }
+    this.toggleSize = this.toggleSize.bind(this)
   }
 
   componentDidMount() {
@@ -41,22 +45,33 @@ class App extends Component {
       })
   }
 
+  toggleSize(evt) {
+    const newSize = this.state.size === 'max' ? 'min' : 'max'
+    this.setState({
+      'size': newSize
+    })
+  }
+
   render() {
     if (this.state.err) {
       return (
-        <div className='app ac-content'>
+        <div className="app ac-content">
           <ErrorMessage url={this.props.match.params.shareUrl} />
         </div>
       )
     }
 
+    const Component = this.state.size === 'max' ? Max : Min
     return (
-      <div className='app ac-content'>
-        <Thumb
+      <div className={`app ac-content ${this.state.size}`}>
+        <Component
           previewImgUrl={this.state.previewImgUrl}
           projectName={this.state.projectName}
           shareUrl={this.state.shareUrl} />
-        <Link shareUrl={this.state.shareUrl} />
+        <div className="tools">
+          <Resize size={this.state.size} action={this.toggleSize} />
+          <Link shareUrl={this.state.shareUrl} />
+        </div>
       </div>
     )
   }

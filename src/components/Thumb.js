@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Analytics from '../helpers/Analytics'
+import './thumb.css'
 
 class Thumb extends Component {
   constructor (props) {
@@ -7,8 +8,12 @@ class Thumb extends Component {
     this.resizeImage = this.resizeImage.bind(this)
   }
 
-  resizeImage () {
-    window.AP.resize('100%', this.thumb.naturalHeight)
+  resizeImage (evt) {
+    if (this.props.maximized) {
+      window.AP.resize('100%', evt.currentTarget.naturalHeight)
+    } else {
+      window.AP.resize('600px', '100%')
+    }
   }
 
   render () {
@@ -18,9 +23,9 @@ class Thumb extends Component {
         href={shareUrl}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={ () => Analytics.track('Confluence.ThumbClicked') }>
+        onClick={() => Analytics.track('Confluence.ThumbClicked')}>
         <img
-          ref={el => { this.thumb = el }}
+          className="thumb"
           src={previewImgUrl}
           alt={projectName}
           onLoad={this.resizeImage} />
